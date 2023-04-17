@@ -9,22 +9,22 @@ document.body.appendChild(script);
 
 /* -- Glow effect -- */
 
-// const blob = document.getElementById("blob");
+const blob = document.getElementById("blob");
 
-// window.onpointermove = event => {
-//     const {
-//         clientX,
-//         clientY
-//     } = event;
+window.onpointermove = event => {
+    const {
+        clientX,
+        clientY
+    } = event;
 
-//     blob.animate({
-//         left: `${clientX}px`,
-//         top: `${clientY}px`
-//     }, {
-//         duration: 3500,
-//         fill: "forwards"
-//     });
-// }
+    blob.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+    }, {
+        duration: 3500,
+        fill: "forwards"
+    });
+}
 
 
 const trailer = document.getElementById("trailer");
@@ -46,15 +46,22 @@ const animateTrailer = (e, interacting) => {
 const getTrailerClass = type => {
   switch(type) {
     case "scrollCard":
-      return "fa-solid fa-arrow-up-right";
+		return "<i class='fa-solid fa-arrow-up-right'></i>";
     case "services":
-        return "fa-regular fa-arrows-left-right";
+		return "<i class='fa-regular fa-arrows-left-right'></i>";
+        //return "fa-regular fa-arrows-left-right";
     case "video":
-      return "fa-regular fa-arrows-up-down";
+		return "<i class='fa-regular fa-arrows-up-down'></i>";
     case "buttonLink":
       return "";
     case "link":
-      return "fa-regular fa-arrows-up-down";
+		return "<i class='fa-regular fa-arrows-up-down'></i>";
+	case "readmore":
+		return "Read More";
+	case "viewwork":
+		return "View Work";
+	case "viewmore":
+		return "View More";
     default:
       return ""; 
   }
@@ -64,6 +71,7 @@ window.onmousemove = e => {
   const interactable = e.target.closest(".interactable"),
         interacting = interactable !== null;
   
+  //const icon = document.getElementById("trailer-icon");
   const icon = document.getElementById("trailer-icon");
   
   animateTrailer(e, interacting);
@@ -71,7 +79,8 @@ window.onmousemove = e => {
   trailer.dataset.type = interacting ? interactable.dataset.type : "";
   
   if(interacting) {
-    icon.className = getTrailerClass(interactable.dataset.type);
+    //icon.className = getTrailerClass(interactable.dataset.type);
+	$("#trailer-icon").html(getTrailerClass(interactable.dataset.type));
   }
 }
 
@@ -224,7 +233,9 @@ const timeline = gsap.timeline({
     }
 })
 timeline.from('.my-boxes', {
-    xPercent: 100,
+    xPercent: 500,
+	duration: 10,
+	delay: 0.5,
     ease: "power1.out"
 
 });
