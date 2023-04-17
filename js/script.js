@@ -58,6 +58,8 @@ const getTrailerClass = type => {
 		return "<i class='fa-regular fa-arrows-up-down'></i>";
 	case "readmore":
 		return "Read More";
+	case "knowmore":
+		return "Know More";	
 	case "viewwork":
 		return "View Work";
 	case "viewmore":
