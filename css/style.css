@@ -719,9 +719,9 @@ body:hover>#trailer {
 
 /* Service Blocks */
 
-.serviceDiv {
-    /* overflow: hidden; */
-}
+/* .serviceDiv {
+    overflow: hidden;
+} */
 
 .serviceScroll {
     width: 100%;
@@ -1751,6 +1751,8 @@ body:hover>#trailer {
 
 .counter {
     color: #006D5B;
+    font-size: 3.5rem;
+    line-height: 1;
 }
 
 .carousel-indicators {
