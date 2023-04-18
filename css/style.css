@@ -1493,6 +1493,11 @@ body:hover>#trailer {
     width: 100%;
 }
 
+.point .div100{
+    width: 100%;
+    height: auto;
+}
+
 .point article {
     flex-basis: 50%;
     margin-right: auto;
