@@ -1493,8 +1493,8 @@ body:hover>#trailer {
     width: 100%;
 }
 
-.point .div100{
-    width: 100%;
+.point article.div100{
+    width: 100% !important;
     height: auto;
 }
 
