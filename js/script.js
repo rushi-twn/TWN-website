@@ -264,29 +264,30 @@ gsap.to(boxes, {
 
 /////////////////////////////////
 
+// Card Velocity script on scroll
 
-let proxy = { skew: 0 },
-  skewSetter = gsap.quickSetter(".card", "skewY", "deg"),
-  clamp = gsap.utils.clamp(-50, 50);
+// let proxy = { skew: 0 },
+//   skewSetter = gsap.quickSetter(".card", "skewY", "deg"),
+//   clamp = gsap.utils.clamp(-30, 30);
 
-ScrollTrigger.create({
-  onUpdate: (self) => {
-    let skew = clamp(self.getVelocity() / -500);
+// ScrollTrigger.create({
+//   onUpdate: (self) => {
+//     let skew = clamp(self.getVelocity() / -500);
     
-    if (Math.abs(skew) > Math.abs(proxy.skew)) {
-      // console.log(skew)
-      // console.log(proxy.skew)
-      proxy.skew = skew;
-      gsap.to(proxy, {
-        skew: 0,
-        duration: 0.8,
-        ease: "power3",
-        overwrite: true,
-        onUpdate: () => skewSetter(proxy.skew)
-      });
-    }
-  }
-});
+//     if (Math.abs(skew) > Math.abs(proxy.skew)) {
+//       // console.log(skew)
+//       // console.log(proxy.skew)
+//       proxy.skew = skew;
+//       gsap.to(proxy, {
+//         skew: 0,
+//         duration: 0.8,
+//         ease: "power3",
+//         overwrite: true,
+//         onUpdate: () => skewSetter(proxy.skew)
+//       });
+//     }
+//   }
+// });
 
-gsap.set(".card", { transformOrigin: "left center", force3D: true });
+// gsap.set(".card", { transformOrigin: "left center", force3D: true });
 
