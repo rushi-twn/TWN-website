@@ -1613,7 +1613,8 @@ body:hover>#trailer {
 .filters-links li.active a {
     color: #006D5B;
 }
-
+.font-40{ font-size: 40px; }
+.font-60{ font-size: 60px; }
 /* purvi */
 
 
