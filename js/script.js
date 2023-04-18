@@ -34,7 +34,7 @@ const animateTrailer = (e, interacting) => {
         y = e.clientY - trailer.offsetHeight / 2;
   
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 4.5 : 1})`
   }
   
   trailer.animate(keyframes, { 
@@ -64,6 +64,8 @@ const getTrailerClass = type => {
 		return "View Work";
 	case "viewmore":
 		return "View More";
+  case "readstory":
+      return "Read Story";    
     default:
       return ""; 
   }
