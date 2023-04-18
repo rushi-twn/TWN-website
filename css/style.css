@@ -503,9 +503,9 @@ body:hover>#trailer {
     transition: all 1250ms;
     overflow: hidden;
     background: #353535;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     border: none;
     z-index: 1;
     border-radius: 10px;
