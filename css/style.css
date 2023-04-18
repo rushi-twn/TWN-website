@@ -226,6 +226,13 @@ body:hover>#trailer {
     height: auto;
 }
 
+.img80 {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 2rem;
+    display: block;
+}
+
 /* Div Heights and Widths */
 
 .div100 {
@@ -1008,7 +1015,7 @@ body:hover>#trailer {
     height: auto;
     display: block;
     z-index: 100;
-    margin: 5vh auto 20vh;
+    margin: 5vh auto 15vh;
 }
 
 .caseStudyHalfDiv {
