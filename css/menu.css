@@ -24,7 +24,7 @@
     box-shadow: var(--shadow-medium); background-color: var(--color-white-100); transition: all 0.5s ease; padding: 30px; }
 .navbar.active { left: 0rem; opacity: 1; visibility: visible; z-index: 99999; }
 .menunav { padding: 50px 50px; width: 100%; }
-.menu-item { position: relative; display: inline-block; width: 100%; padding: 32px 10px; border-bottom: 1px solid #666; }
+.menu-item { position: relative; display: inline-block; width: 100%; padding: 32px 16px; border-bottom: 1px solid #666; }
 .menu-link {
   display: flex;
   -moz-column-gap: 0.25rem;
