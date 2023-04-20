@@ -90,45 +90,77 @@ window.onmousemove = e => {
 
 // //////
 
-const timeline = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.serviceScrollBlock',
-        //pin: true,
-        scrub: 1,
-        markers: true,
-        start: 'top center',
+// const timeline = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.serviceScrollBlock',
+//         //pin: true,
+//         scrub: 1,
+//         markers: true,
+//         id: "serviceScrollBlock",
+//         start: 'top center',
         
-        end: () => "+=" + document.querySelector(".serviceScrollBlock").offsetWidth,
-          // end: () => "+=" + (imageSection.scrollWidth - document.documentElement.clientWidth),
-        //   invalidateOnRefresh: true
-    }
-})
-timeline.from('.my-boxes', {
-    xPercent: 500,
-    duration: 10,
-    delay: 0.5,
-    ease: "power1.out"
+//         end: () => "+=" + document.querySelector(".serviceScrollBlock").offsetWidth,
+//           // end: () => "+=" + (imageSection.scrollWidth - document.documentElement.clientWidth),
+//         //   invalidateOnRefresh: true
+//     }
+// })
+// timeline.from('.my-boxes', {
+//     xPercent: 500,
+//     duration: 10,
+//     delay: 0.5,
+//     ease: "power1.out"
 
+// });
+
+// let boxes = gsap.utils.toArray(".serviceCard");
+
+// gsap.to(boxes, {
+
+//     xPercent: -100 * (boxes.length - 1.9),
+//     ease: "none",
+//     scrollTrigger: {
+//         trigger: "#service",
+//         //pin: true,
+//         markers: true,
+//         id: "serviceCard",
+//         // id: serviceCard,
+//         scrub: 5,
+//         snap: 1 / (boxes.length - 1),
+//         // base vertical scrolling on how wide the container is so it feels more natural.
+//         start: "top top", // when the top of the trigger hits the top of the viewport
+//         end: "bottom bottom",
+//     }
+// });
+
+// 
+
+let container = document.querySelector(".serviceScroll");
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    pin: true,
+    scrub: 1,
+    trigger: container,
+    end: () => `+=${container.scrollWidth - document.documentElement.clientWidth + container.offsetWidth}`
+  },
+  defaults: { ease: "none", duration: 1 }
 });
 
-let boxes = gsap.utils.toArray(".serviceCard");
-
-gsap.to(boxes, {
-
-    xPercent: -100 * (boxes.length - 1.7),
-    ease: "none",
-    scrollTrigger: {
-        trigger: "#service",
-        //pin: true,
-        markers: true,
-        // id: serviceCard,
-        scrub: 5,
-        snap: 1 / (boxes.length - 1),
-        // base vertical scrolling on how wide the container is so it feels more natural.
-        start: "top center", // when the top of the trigger hits the top of the viewport
-        end: "bottom bottom",
-    }
-});
+tl.to(".serviceCard", {
+      x: () => `+=${-(container.scrollWidth - document.documentElement.clientWidth)}`
+    },
+    0
+  );
+  // .from(".cardAnimate", {
+  //     opacity: 0,
+  //     scale: 0.25,
+  //     duration: 0.2,
+  //     stagger: {
+  //       amount: 0.8
+  //     }
+  //   },
+  //   0
+  // );
 
 
 

@@ -745,6 +745,21 @@ body:hover>#trailer {
     overflow: hidden;
 } */
 
+.panel {
+    display: flex;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 80%;
+    margin-top: auto;
+    padding: 10rem 7rem 2rem 7rem;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 2;
+}
+
 .serviceScroll {
     width: 100%;
     height: auto;
@@ -762,7 +777,7 @@ body:hover>#trailer {
     display: flex;
     flex: 0 0 600px;
     flex-direction: column;
-    margin: 0 50px 0 0;
+    margin: 50px 50px 50px 0;
     border-radius: 10px;
     padding: 30px;
     justify-content: space-between;
