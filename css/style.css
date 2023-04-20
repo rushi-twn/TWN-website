@@ -279,16 +279,6 @@ body:hover>#trailer {
     background-attachment: fixed !important;
 }
 
-.ht100GreyBG::after {
-    content: '';
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-}
-
 .ht100Overlay {
     width: 100%;
     height: 100vh;
@@ -471,7 +461,7 @@ body:hover>#trailer {
 }
 
 .caseStudyTitle {
-    font-size: 2.75em;
+    font-size: 3em;
     line-height: 1.5;
 }
 
@@ -745,21 +735,6 @@ body:hover>#trailer {
     overflow: hidden;
 } */
 
-.panel {
-    display: flex;
-    flex: 0 0 50%;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    height: 80%;
-    margin-top: auto;
-    padding: 10rem 7rem 2rem 7rem;
-    background-color: transparent;
-    overflow: hidden;
-    z-index: 2;
-}
-
 .serviceScroll {
     width: 100%;
     height: auto;
@@ -777,7 +752,7 @@ body:hover>#trailer {
     display: flex;
     flex: 0 0 600px;
     flex-direction: column;
-    margin: 50px 50px 50px 0;
+    margin: 0 50px 0 0;
     border-radius: 10px;
     padding: 30px;
     justify-content: space-between;
@@ -1040,7 +1015,7 @@ body:hover>#trailer {
     height: auto;
     display: block;
     z-index: 100;
-    margin: 5vh auto 10vh;
+    margin: 5vh auto 15vh;
 }
 
 .caseStudyHalfDiv {
@@ -1555,14 +1530,6 @@ body:hover>#trailer {
     /* flex-basis: 25%; */
     max-width: 70%;
     margin: 0 auto 25px;
-    height: auto;
-    display: block;
-}
-
-/* All Work Video*/
-
-video#myVideo{
-    width: 100%;
     height: auto;
     display: block;
 }
