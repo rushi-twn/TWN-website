@@ -792,37 +792,35 @@
             }
         });
     </script>
+    <script src="js/owl.carousel.min.js"></script>
+
     <script>
         $('.testimonial').owlCarousel({
             center: true,
             items: 3,
             loop: true,
-            nav: false,
-            margin: 30,
-            // navText: [
-            //     "<i class='fa fa-chevron-left'></i>",
-            //     "<i class='fa fa-chevron-right'></i>"
-            // ],
-            center: true,
-            autoplay: true,
-            dots: true,
-            // dotsClass: "false",
-            responsive: {
-                0: {
-                    items: 1
-                },
-                640: {
-                    items: 1
-                },
-                768: {
-                    items: 3
-                },
-                1025: {
-                    items: 3
-                }
-            }
-        });
-    </script>
+            nav: true,
+            margin: 25,
+            navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+                        center: true,
+                        autoplay: true,
+                        dots: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            640: {
+                                items: 1
+                            },
+                            768: {
+                                items: 3
+                            },
+                            1025: {
+                                items: 3
+                            }
+                        }
+                    });
+    </script>  
 
     <script>
         /*******Accrodian JS**********/
