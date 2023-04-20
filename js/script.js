@@ -95,7 +95,7 @@ const timeline = gsap.timeline({
         trigger: '.serviceScrollBlock',
         //pin: true,
         scrub: 1,
-        markers: true,
+        // markers: true,
         start: 'top center',
         
         end: () => "+=" + document.querySelector(".serviceScrollBlock").offsetWidth,
@@ -120,7 +120,7 @@ gsap.to(boxes, {
     scrollTrigger: {
         trigger: "#service",
         //pin: true,
-        markers: true,
+        // markers: true,
         // id: serviceCard,
         scrub: 5,
         snap: 1 / (boxes.length - 1),
