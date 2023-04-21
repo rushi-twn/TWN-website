@@ -67,7 +67,7 @@
             </div>
         </div>
     </section>
-
+	
     <!-- <section class="workfilter" id="workfilter">
         <div class="container">
             <div class="wfilter">
@@ -722,6 +722,31 @@
             </div>
         </div>
     </section>
+	
+	<div class="navigation">
+		<div class="menuToggle">
+			<p class="filtericon"><i class="fal fa-filter"></i></p>
+		</div>
+		<div class="menu-filter">
+			<ul>
+				<li style="--i:0.1s;"><a href="#" class="filtermenu active">
+				  All work
+				</a></li>
+				<li style="--i:0.2s;"><a href="#">
+				  End to end marketing
+				</a></li>
+				<li style="--i:0.3s;"><a href="#">
+				  Large Enterprise
+				</a></li>
+				 <li style="--i:0.4s;"><a href="#">
+				  Campaigns
+				</a></li>
+				 <li style="--i:0.5s;"><a href="#">
+				  Extended Reality
+				</a></li>
+			</ul>
+		</div>
+	</div>
 
 
 
@@ -877,6 +902,24 @@
             }
         }
     </script>
+	<script>
+		let menuToggle = document.querySelector(".menuToggle");
+		menuToggle.onclick = function () {
+		  menuToggle.classList.toggle("active");
+		  //alert(menuToggle.hasClass);
+		  $(".menuToggle").css("background-color", "#fff");
+		  $(".menuToggle").css("color", "#000");
+		  $(".menuToggle .filtericon").css("color", "#000");
+		  $(".menuToggle").css("opacity", "1");
+		  $(".menuToggle .filtericon").html("<i class='fal fa-filter'></i>");
+		  $(".menuToggle.active").css("background-color", "#000");
+		  $(".menuToggle.active").css("color", "#fff");
+		  $(".menuToggle.active").css("opacity", "0.7");
+		  $(".menuToggle.active .filtericon").html("<i class='far fa-times'></i>");
+		  $(".menuToggle.active .filtericon").css("color", "#fff");
+		  
+		};
+	</script>
 </body>
 
 </html>

@@ -1640,6 +1640,116 @@ video#myVideo{
 }
 .font-40{ font-size: 40px; }
 .font-60{ font-size: 60px; }
+
+.navigation {
+	position: fixed; bottom: 8%; right: 2%; display: flex; justify-content: center; align-items: center;
+}
+.menuToggle {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Figtree', sans-serif;
+}
+.menuToggle p{
+	color:#000;
+}
+
+.menuToggle::after {
+	content: "";
+	position: absolute;
+	left: calc(44% - 8px);
+	bottom: 51px;
+	width: 27px;
+	height: 25px;
+	transform: rotate(45deg);
+	background: #000000;
+	opacity: 1;
+	border-radius: none;
+	transition: 0.5s;
+	display: none;
+}
+.menuToggle.active::after{
+	transition-delay: 0.5s;
+	display: block;
+}
+.menuToggle.active p::after{
+	display: none;
+}
+.menu-filter {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  opacity: 0.7;
+  border-radius: 10px;
+  z-index: -1;
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+  transition-delay: 1s, 0.5s, 0.5s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  bottom: 12px;
+  padding: 15px;
+  right: 10%;
+}
+
+.menuToggle.active ~ .menu-filter {
+  transform: translateY(-100px);
+  height: 180px;
+  width: 240px;
+  right: 10%;
+  bottom: 0px;
+  z-index: 1;
+  transition-delay: 0s, 0.5s, 0.5s;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-filter ul {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 40px;
+  z-index: 10;
+}
+.menu-filter ul li {
+  list-style: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: 0.25s;
+  transition-delay: 0s;
+  transition-delay: calc(0s + var(--i));
+}
+.menuToggle.active ~ .menu-filter ul li {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: calc(0.75s + var(--i));
+}
+.menu-filter ul li a {
+  display: block;
+  font-size: 17px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 0 11px;
+}
+.menu-filter ul li:hover a {
+  color: var(--teal);
+}
+.filtermenu.active{
+	background: #fff;
+	color: var(--teal); !important;
+	border-radius: 5px;
+}
 /* purvi */
 
 
