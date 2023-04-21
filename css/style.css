@@ -1700,7 +1700,7 @@ video#myVideo{
 
 .menuToggle.active ~ .menu-filter {
   transform: translateY(-100px);
-  height: 180px;
+  height: 190px;
   width: 240px;
   right: 10%;
   bottom: 0px;
@@ -1736,7 +1736,7 @@ video#myVideo{
 }
 .menu-filter ul li a {
   display: block;
-  font-size: 17px;
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
   margin-bottom: 5px;
