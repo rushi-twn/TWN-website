@@ -93,7 +93,7 @@ window.onmousemove = e => {
 const timeline = gsap.timeline({
     scrollTrigger: {
         trigger: '.serviceScrollBlock',
-        //pin: true,
+        // pin: true,
         scrub: 1,
         // markers: true,
         // id: "serviceScrollBlock",
@@ -120,7 +120,7 @@ gsap.to(boxes, {
     ease: "none",
     scrollTrigger: {
         trigger: "#service",
-        //pin: true,
+        // pin: true,
         // markers: true,
         // id: "serviceCard",
         scrub: 1,
