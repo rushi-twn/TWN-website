@@ -26,29 +26,68 @@
         <!-- AOS CSS -->
         <link href="css/aos.css" rel="stylesheet">
         <link href="css/owl.carousel.css" rel="stylesheet">
+
+        <link href="css/menu.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body class="bgGrey">
         <main class="main">
             <section>
                 <div id="trailer">
-                    <i id="trailer-icon" class=""></i>
+                    <span id="trailer-icon"> </span>
                 </div>
             </section>
+            <!--Menu-->
             <section>
-                <div class="container-fluid div100 bgGrey px-0 mx-0 mainNav">
+                <div class="container-fluid div100 bgGrey px-0 mx-0">
                     <div class="row header-box justify-content-between align-items-center px-0 mx-0">
                         <div class="col-6">
-                            <img src="images/twn-logo.png" alt="THINK WHY NOT" class="twn-logo" />
+                            <a href="index.html" target="_self">
+                                <img src="images/twn-logo.png" alt="THINK WHY NOT" class="twn-logo" />
+                            </a>
                         </div>
                         <div class="col-6">
-                            <div class="menu-icon float-end mx-3 txtTeal">
+                            <div class="menu-icon float-end mx-3 txtTeal burger" id="burger">
                                 <a href="javascript:void(0);" class="txtTeal"><span class="material-symbols-rounded">clear_all</span></a>
                             </div>
                         </div>
                     </div>
+					<span class="overlay"></span>
+					<nav class="navbar" id="navbar">
+						<div class="closeicon">
+							<a onclick="menuclose()">
+								<i class="fas fa-bars fa-bar fa-times" aria-hidden="true"></i>
+							</a>
+						</div> 
+                        <div class="menunav">
+							<ul class="menu" id="menu">
+								<li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+								<li class="menu-item menu-dropdown menuright">
+									<span class="menu-link" data-toggle="submenu"> About Us</span>
+									<ul class="submenu">
+										<li class="submenu-item"><a href="javascript:void(0);" class="submenu-link">Who we are</a></li>
+										<li class="submenu-item"><a href="javascript:void(0);" class="submenu-link">Our Team</a></li>
+										<li class="submenu-item"> <i class="fas fa-arrow-left"></i> </li>
+									</ul>
+								</li>
+                                <li class="menu-item menu-dropdown">
+									<span class="menu-link" data-toggle="submenu">Services</span>
+									<ul class="submenu">
+										<li class="submenu-item"> <i class="fas fa-arrow-right"></i> </li>
+										<li class="submenu-item"><a href="end-to-end-marketing.html" target="_self" class="submenu-link">End to end Marketing</a></li>
+										<li class="submenu-item"><a href="large-enterprises.html" target="_self" class="submenu-link">Large enterprise</a></li>
+										<li class="submenu-item"><a href="campaigns.html" target="_self" class="submenu-link">Campaigns</a></li>
+										<li class="submenu-item"><a href="http://thinkwhynotxr.com/" target="_blank" class="submenu-link">Extended Reality</a></li>
+									</ul>
+								</li>
+                                <li class="menu-item menuright"><span><a href="all-work.html" class="menu-link">Work</a><span></li>
+								<li class="menu-item"><a href="javascript:void(0);" class="menu-link">Contact Us</a></li>
+							</ul>
+						</div>
+					</nav>
                 </div>
             </section>
+            <!--Header-->
             <div class="scrollSection">
                 <section>
                     <div class="container-fluid p-0">
@@ -108,95 +147,52 @@
                         <div class="container py-5">
                             <div class="row">
                                 <div class="photo-grid">
-                                    <div data-aos="fade-up" class="card card-wide interactable" data-type="viewwork" style="background-image: url('images/tridhatu-calender.jpeg')">
-                                        <div class="card-grid-inner">
-                                            <!-- <div class="d-flex justify-content-between align-items-end"> -->
-                                            <div class="d-flex justify-content-end cardPill">
-                                                <p class="fontFigLight txtGrey bgWhite filterPill">Campaigns</p>
-                                            </div>
-                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Tridhaatu Calendar </a>
-                                            </p>
-                                            <!-- </div>
-                                                <div class="d-flex justify-content-between"> -->
-                                            <img src="images/tridhatu-color-logo.png" alt="" class="cardGridLogo" />
-                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Bringing Lord Ganesha's stories alive in a true to life execution.</a>
-                                            </p>
-                                            <!-- </div> -->
-                                        </div>
-                                    </div>
-                                    <div data-aos="fade-up" class="card card-square interactable" data-type="viewwork" style="background-image: url('images/vixture.jpeg')">
+                                    <div data-aos="fade-up" class="card card-wide" style="background-image: url('images/meta-india-home.png')">
                                         <div class="card-grid-inner">
                                             <div class="d-flex justify-content-end cardPill">
-                                                <p class="fontFigLight txtGrey bgWhite filterPill">Campaigns</p>
+                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">Large Enterprises</p>
                                             </div>
                                             <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Vixture</a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">Meta Women's Safety </a>
                                             </p>
-                                            <img src="images/vixture-logo.png" alt="" class="cardGridLogo" />
+                                            <img src="images/meta-logo.png" alt="" class="cardGridLogo" />
                                             <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Creating India's Biggest Gaming Property.</a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">Keeping women safe online. An influencer led campaign for Meta India.</a>
                                             </p>
                                         </div>
                                     </div>
-                                    <div data-aos="fade-up" class="card card-tall interactable" data-type="viewwork" style="background-image: url('images/kohinoor-square.jpeg')">
-                                        <div class="card-grid-inner">
-                                            <div class="d-flex justify-content-end cardPill">
-                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">End to End Marketing</p>
-                                            </div>
-                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Kohinoor Square </a>
-                                            </p>
-                                            <img src="images/ks-logo.png" alt="" class="cardGridLogoTall" />
-                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">A decade positioning and marketing India's tallest commercial tower.</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div data-aos="fade-up" class="card card-tall interactable" data-type="viewwork" style="background-image: url('images/cs-happy-india.jpeg')">
+                                    <!-- 1 -->
+                                    <div data-aos="fade-up" class="card card-square" style="background-image: url('images/cox-and-kings-home.png')">
                                         <div class="card-grid-inner">
                                             <div class="d-flex justify-content-end cardPill">
                                                 <p class="fontFigLight txtGrey bgWhite filterPill">Campaigns</p>
                                             </div>
                                             <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Happy India </a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">Cox & Kings</a>
                                             </p>
-                                            <img src="images/india-first-logo.png" alt="" class="cardGridLogoTall" />
+                                            <img src="images/c&k-logo.png" alt="" class="cardGridLogo" />
                                             <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Celebrating India's youngest innovators through a national activation &amp; a book.</a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">Building a travel brand through media innovations. A TV show. Stand up comedy. Theatre.</a>
                                             </p>
                                         </div>
                                     </div>
-                                    <div data-aos="fade-up" class="card card-wide interactable" data-type="viewwork" style="background-image: url('images/tridhaatu-aranya.jpeg')">
+                                    <!-- 2 -->
+                                    <div data-aos="fade-up" class="card card-tall" style="background-image: url('images/ta-fixed-img.png')">
                                         <div class="card-grid-inner">
                                             <div class="d-flex justify-content-end cardPill">
-                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">End to End Marketing</p>
+                                                <p class="fontFigLight txtGrey bgWhite filterPill">Campaigns</p>
                                             </div>
                                             <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Aranya </a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="tridhaatu-aranya.html">Tridhaatu Aranya</a>
                                             </p>
                                             <img src="images/tridhatu-color-logo.png" alt="" class="cardGridLogo" />
                                             <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">A conservation inspired campiagn that featured in a Philip Kotler book.</a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="tridhaatu-aranya.html">A conservation inspired campiagn that featured in a Philip Kotler book.</a>
                                             </p>
                                         </div>
                                     </div>
-                                    <div data-aos="fade-up" class="card card-wide interactable" data-type="viewwork" style="background-image: url('images/skoda-img.png')">
-                                        <div class="card-grid-inner">
-                                            <div class="d-flex justify-content-end cardPill">
-                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">Campaigns</p>
-                                            </div>
-                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Škoda </a>
-                                            </p>
-                                            <img src="images/skoda-yeti-logo.png" alt="" class="cardGridLogoSmall" />
-                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">An award winning activation through the road less travelled.</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div data-aos="fade-up" class="card card-tall interactable" data-type="viewwork" style="background-image: url('images/amish-shiva.png')">
+                                    <!-- 3 -->
+                                    <div data-aos="fade-up" class="card card-tall interactable" data-type="viewwork" style="background-image: url('images/War\ of\ lanka.jpeg')">
                                         <div class="card-grid-inner">
                                             <div class="d-flex justify-content-end cardPill">
                                                 <p class="fontFigLight txtGrey bgWhite filterPillWide">Extended Reality</p>
@@ -210,35 +206,82 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div data-aos="fade-up" class="card card-wide interactable" data-type="viewwork" style="background-image: url('images/Women\ safety.jpeg')">
+                                    <!-- 4 -->
+                                    <div data-aos="fade-up" class="card card-wide " style="background-image: url('images/kohinoor-square.jpeg')">
+                                        <div class="card-grid-inner">
+                                            <div class="d-flex justify-content-end cardPill">
+                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">End to End Marketing</p>
+                                            </div>
+                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">Kohinoor Square </a>
+                                            </p>
+                                            <img src="images/ks-logo.png" alt="" class="cardGridLogo" />
+                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">A decade positioning and marketing India's tallest commercial tower.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div data-aos="fade-up" class="card card-wide " style="background-image: url('images/skoda-img.png')">
+                                        <div class="card-grid-inner">
+                                            <div class="d-flex justify-content-end cardPill">
+                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">Campaigns</p>
+                                            </div>
+                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">Škoda </a>
+                                            </p>
+                                            <img src="images/skoda-yeti-logo.png" alt="" class="cardGridLogoSmall" />
+                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">An award winning activation through the road less travelled.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div data-aos="fade-up" class="card card-tall " style="background-image: url('images/vat-69.jpeg')">
+                                        <div class="card-grid-inner">
+                                            <div class="d-flex justify-content-end cardPill">
+                                                <p class="fontFigLight txtGrey bgWhite filterPill">Campaigns</p>
+                                            </div>
+                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">VAT 69 </a>
+                                            </p>
+                                            <img src="images/vat_logo.png" alt="" class="cardGridLogoSmall" />
+                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end interactable" data-type="viewwork" href="javascript:void(0);">An activation that delivered a 16x jump in sales.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- 7 -->
+                                    <div data-aos="fade-up" class="card card-wide interactable" data-type="viewwork" style="background-image: url('images/fb-mila.png')">
+                                        <div class="card-grid-inner">
+                                            <div class="d-flex justify-content-end cardPill">
+                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">End to End Marketing</p>
+                                            </div>
+                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="">MILA </a>
+                                            </p>
+                                            <img src="images/meta-logo.png" alt="" class="cardGridLogo" />
+                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="">........................</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- 8 -->
+                                    <div data-aos="fade-up" class="card card-square interactable" data-type="viewwork" style="background-image: url('images/ram-chandra-series.jpeg')">
                                         <div class="card-grid-inner">
                                             <div class="d-flex justify-content-end cardPill">
                                                 <p class="fontFigLight txtGrey bgWhite filterPillWide">Large Enterprises</p>
                                             </div>
                                             <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Meta Women's Safety </a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Amish Scion of Ikshvaku</a>
                                             </p>
-                                            <img src="images/meta-logo.png" alt="" class="cardGridLogo" />
+                                            <img src="images/shiva-triology-logo.png" alt="" class="cardGridLogo" />
                                             <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Keeping women safe online. An influencer led campaign for Meta India.</a>
+                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Leveraging existing fans for yet another record-breaking bestseller.</a>
                                             </p>
                                         </div>
                                     </div>
-                                    <div data-aos="fade-up" class="card card-square interactable" data-type="viewwork" style="background-image: url('images/anti-scam.jpg')">
-                                        <div class="card-grid-inner">
-                                            <div class="d-flex justify-content-end cardPill">
-                                                <p class="fontFigLight txtGrey bgWhite filterPillWide">Large Enterprises</p>
-                                            </div>
-                                            <p class="fontFigLight card-title txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Meta Social Commerce </a>
-                                            </p>
-                                            <img src="images/meta-logo.png" alt="" class="cardGridLogo" />
-                                            <p class="fontFigLight card-title2 txtWhite m-0 p-0">
-                                                <a class="fontFigLight txtWhite m-0 text-start card-stack-link d-flex align-items-end justify-content-end" href="javascript:void(0);">Helping reduce E-Commerce scams. 
-                                                A Scaled Campaign across 12 countries.</a>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <!-- 9 -->
                                 </div>
                             </div>                            
                         </div>
@@ -303,6 +346,32 @@
                     </div>
                 </section>
             </div>
+
+            <div class="navigation">
+                <div class="menuToggle">
+                    <p class="filtericon"><i class="fal fa-filter"></i></p>
+                </div>
+                <div class="menu-filter">
+                    <ul>
+                        <li style="--i:0.1s;"><a href="all-work.html" target="_self" class="filtermenu active  fontFigRegular">
+                          All Work
+                        </a></li>
+                        <li style="--i:0.2s;"><a href="end-to-end-marketing.html" target="_self" class="fontFigRegular">
+                          End to End marketing
+                        </a></li>
+                        <li style="--i:0.3s;"><a href="large-enterprises.html" target="_self" class=" fontFigRegular">
+                          Large Enterprise
+                        </a></li>
+                         <li style="--i:0.4s;"><a href="campaigns.html" target="_self" class="fontFigRegular">
+                          Campaigns
+                        </a></li>
+                         <li style="--i:0.5s;"><a href="http://thinkwhynotxr.com/" target="_blank" class="fontFigRegular">
+                          Extended Reality
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- New Filter -->
         </main>
         <!-- Scripts -->
         <!-- JQuery -->
@@ -320,6 +389,8 @@
         <!-- <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script> -->
         <!-- TWN script -->
         <script src="js/script.js"></script>
+
+        <script src="js/menu.js"></script>
         <!-- <script src="js/script-txt.js"></script> -->
         <!-- bootstrap script -->
         <script src="js/bootstrap.bundle.min.js" ></script>
