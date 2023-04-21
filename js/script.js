@@ -131,6 +131,20 @@ gsap.to(boxes, {
     }
 });
 
+let menuToggle = document.querySelector(".menuToggle");
+	menuToggle.onclick = function () {
+	menuToggle.classList.toggle("active");
+	$(".menuToggle").css("background-color", "#fff");
+	$(".menuToggle").css("color", "#000");
+	$(".menuToggle .filtericon").css("color", "#000");
+	$(".menuToggle").css("opacity", "1");
+	$(".menuToggle .filtericon").html("<i class='fal fa-filter'></i>");
+	$(".menuToggle.active").css("background-color", "#000");
+	$(".menuToggle.active").css("color", "#fff");
+	$(".menuToggle.active").css("opacity", "0.7");
+	$(".menuToggle.active .filtericon").html("<i class='far fa-times'></i>");
+	$(".menuToggle.active .filtericon").css("color", "#fff");
+};
 
 
 /////////////////////////////////
