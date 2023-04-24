@@ -1750,6 +1750,69 @@ video#myVideo{
 	color: var(--teal); !important;
 	border-radius: 5px;
 }
+/*
+.home-services ul {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.home-services li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 10px;
+  background: #e74c3c;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.home-services li:hover {
+  background: #e53f2e;
+}
+.home-services li.active {
+  flex: 70%;
+  background: #fff;
+  cursor: default;
+}
+.home-services li.active h2 {
+  color: #e74c3c;
+}
+.home-services li.active .section-content {
+  flex: 90%;
+  opacity: 1;
+  transform: scaleX(1);
+  color: #e74c3c;
+  display: flex;
+}
+.home-services li .section-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+.home-services li .section-title h2 {
+  margin: 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+.home-services li .section-content {
+  flex: 1;
+  display: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.25s 0.1s ease-out;
+}
+*/
 /* purvi */
 
 
