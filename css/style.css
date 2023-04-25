@@ -476,7 +476,7 @@ body:hover>#trailer {
 }
 
 .caseStudyTitleTwo {
-    font-size: 2.25em;
+    font-size: 2em;
     line-height: 1.5;
 }
 
@@ -1192,9 +1192,13 @@ body:hover>#trailer {
         line-height: 1.25;
     }
 
-    .caseStudyTitle,
-    .caseStudyTitleTwo {
+    .caseStudyTitle {
         font-size: 2.25em;
+        line-height: 1.25;
+    }
+
+    .caseStudyTitleTwo {
+        font-size: 2em;
         line-height: 1.25;
     }
 
