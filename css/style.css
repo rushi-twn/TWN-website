@@ -475,6 +475,11 @@ body:hover>#trailer {
     line-height: 1.5;
 }
 
+.caseStudyTitleTwo {
+    font-size: 2.25em;
+    line-height: 1.5;
+}
+
 
 /* */
 .photo-grid {
@@ -1187,8 +1192,9 @@ body:hover>#trailer {
         line-height: 1.25;
     }
 
-    .caseStudyTitle {
-        font-size: 2.5em;
+    .caseStudyTitle,
+    .caseStudyTitleTwo {
+        font-size: 2.25em;
         line-height: 1.25;
     }
 
