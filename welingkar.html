@@ -27,6 +27,7 @@
         <link href="css/aos.css" rel="stylesheet">
         <link href="css/owl.carousel.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="css/menu.css" rel="stylesheet">
     </head>
     <body class="bgGrey">
         <main class="main">
@@ -42,11 +43,44 @@
                             <img src="images/twn-logo.png" alt="THINK WHY NOT" class="twn-logo" />
                         </div>
                         <div class="col-6">
-                            <div class="menu-icon float-end mx-3 txtTeal">
+                            <div class="menu-icon float-end mx-3 txtTeal burger" id="burger">
                                 <a href="javascript:void(0);" class="txtTeal"><span class="material-symbols-rounded">clear_all</span></a>
                             </div>
                         </div>
                     </div>
+					<span class="overlay"></span>
+					<nav class="navbar" id="navbar">
+						<div class="closeicon">
+							<a onclick="menuclose()">
+								<i class="fas fa-bars fa-bar fa-times" aria-hidden="true"></i>
+							</a>
+						</div> 
+                        <div class="menunav">
+							<ul class="menu" id="menu">
+								<li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+								<li class="menu-item menu-dropdown menuright">
+									<span class="menu-link" data-toggle="submenu"> About Us</span>
+									<ul class="submenu">
+										<li class="submenu-item"><a href="javascript:void(0);" class="submenu-link">Who we are</a></li>
+										<li class="submenu-item"><a href="javascript:void(0);" class="submenu-link">Our Team</a></li>
+										<li class="submenu-item"> <i class="fas fa-arrow-left"></i> </li>
+									</ul>
+								</li>
+                                <li class="menu-item menu-dropdown">
+									<span class="menu-link" data-toggle="submenu">Services</span>
+									<ul class="submenu">
+										<li class="submenu-item"> <i class="fas fa-arrow-right"></i> </li>
+										<li class="submenu-item"><a href="end-to-end-marketing.html" target="_self" class="submenu-link">End to end Marketing</a></li>
+										<li class="submenu-item"><a href="large-enterprises.html" target="_self" class="submenu-link">Large enterprise</a></li>
+										<li class="submenu-item"><a href="campaigns.html" target="_self" class="submenu-link">Campaigns</a></li>
+										<li class="submenu-item"><a href="http://thinkwhynotxr.com/" target="_blank" class="submenu-link">Extended Reality</a></li>
+									</ul>
+								</li>
+                                <li class="menu-item menuright"><span><a href="all-work.html" class="menu-link">Work</a><span></li>
+								<li class="menu-item"><a href="javascript:void(0);" class="menu-link">Contact Us</a></li>
+							</ul>
+						</div>
+					</nav>
                 </div>
             </section>
             <div class="scrollSection">
@@ -244,6 +278,7 @@
         <script src="js/case-studies.js"></script>
         <!-- AOS JS -->
         <script src="js/aos.js"></script>
+		<script src="js/menu.js"></script>
         <!-- AOS Script Initializtion -->
         <script>
             AOS.init();
