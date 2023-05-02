@@ -1677,7 +1677,7 @@ video#myVideo{
 
 
 .panel {
-    padding: 30px 30px;
+    padding: 50px 30px;
     display: none;
     background-color: #000;
     color: #fff;
@@ -1732,8 +1732,9 @@ video#myVideo{
 
 .counter {
     color: #006D5B;
-    font-size: 3.5rem;
+    font-size: 6rem;
     line-height: 1;
+    text-align: center;
 }
 
 .carousel-indicators {
@@ -1986,8 +1987,11 @@ video#myVideo{
     }
 
     .testimonial .owl-item.active.center .testimonialCard {
-        transform: scale(1) !important;
-    
+        transform: scale(1) !important;    
+    }
+
+    .accordion {
+        padding: 30px 25px;
     }
 }
 
