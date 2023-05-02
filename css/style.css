@@ -95,7 +95,7 @@ body:hover>#trailer {
     opacity: 1;
 }
 
-#trailer {
+/* #trailer {
     height: 20px;
     width: 20px;
     background-color: var(--teal);
@@ -103,7 +103,6 @@ body:hover>#trailer {
     position: fixed;
     left: 10px;
     top: 10px;
-    /* translate: -50% -50%; */
     z-index: 1;
     pointer-events: none;
     opacity: 1 !important;
@@ -122,7 +121,7 @@ body:hover>#trailer {
     line-height: 4px;
     opacity: 0;
     transition: opacity 400ms ease;
-}
+} */
 
 .twn-logo {
     width: 135px;
@@ -537,7 +536,7 @@ body:hover>#trailer {
 .card::after {
     content: '';
     position: absolute;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     left: 0;
@@ -576,7 +575,8 @@ body:hover>#trailer {
 } */
 
 .card-grid-inner:hover>.card-title,
-.card-grid-inner:hover>.cardPill {
+.card-grid-inner:hover>.cardPill,
+.card-grid-inner:hover> .cardPill .filterPill {
     display: none !important;
 }
 
@@ -982,7 +982,7 @@ body:hover>#trailer {
     top: 0px;
     z-index: 10000;
     pointer-events: none;
-    opacity: 0;
+    opacity: 0.9 !important;
     transition: opacity 500ms ease;
     display: grid;
     place-items: center;
@@ -1075,22 +1075,22 @@ body:hover>#trailer {
 
 /* Filter Pill */
 .filterPill {
-    width: 125px;
+    width: auto;
     text-align: center;
     height: auto;
     border-radius: 10px;
-    font-size: 1rem;
-    padding: 0.5rem !important;
+    font-size: 14px;
+    padding: 0.5rem 0.75rem !important;
 
 }
 
 .filterPillWide {
-    width: 175px;
+    width:  auto;
     text-align: center;
     height: auto;
     border-radius: 10px;
-    font-size: 1rem;
-    padding: 0.5rem !important;
+    font-size: 14px;
+    padding: 0.5rem 0.75rem !important;
 }
 
 .cardGridLogoSmall {
@@ -1133,7 +1133,6 @@ body:hover>#trailer {
 }
 
 .testimonial .item {
-    /* ... */
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
@@ -1770,7 +1769,7 @@ video#myVideo{
     border: none;
 }
 
-.testimonialCard {
+/* .testimonialCard {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1791,7 +1790,6 @@ video#myVideo{
 }
 
 .testimonial .item {
-    /* ... */
     margin-left: 15px !important;
     margin-right: 15px !important;
 }
@@ -1804,10 +1802,14 @@ video#myVideo{
 
 .testimonial .owl-item.active .testimonialCard {
     transform: scale(0.75) !important;
-}
+} */
 
 .filters a {
     text-decoration: none;
+}
+
+.testimonial .owl-prev, .testimonial .owl-next{
+    display: none !important;
 }
 
 
@@ -1851,7 +1853,7 @@ video#myVideo{
     .content-size {
         font-size: 18px;
         line-height: 1.75;
-        text-align: left !important;
+        text-align: justify;
     }
 
     .workCardPadding {
@@ -1901,7 +1903,7 @@ video#myVideo{
 
     .mediaCard {
         width: 100%;
-        height: 400px;
+        height: 500px;
         border-radius: 10px;
         display: flex;
         flex-direction: column-reverse;
@@ -1912,9 +1914,9 @@ video#myVideo{
     }
 
     .mediaCardLeft {
-        padding: 35px;
+        padding: 20px;
         width: 100%;
-        height: 200px;
+        height: 400px;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -1924,16 +1926,21 @@ video#myVideo{
 
     .mediaCardRight {
         width: 100%;
-        height: 200px;
+        height: 400px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;
     }
 
+    .mediaCardTxt{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
     .mediaCardTitle {
-        font-size: 2rem;
-        line-height: 1.25;
+        font-size: 1.75rem;
+        line-height: 1.5;
     }
 
     .caseStudyTitle {
@@ -1961,11 +1968,26 @@ video#myVideo{
         line-height: 1.5;
     }
 
+    .filterPill {
+        font-size: 12px;
+    }
 
     .card-title,
     .card-title2 {
         font-size: 1.25rem;
         line-height: 1.5;
+    }
+
+    .cardGridLogo,
+    .cardGridLogoTall {
+        width: 50%;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .testimonial .owl-item.active.center .testimonialCard {
+        transform: scale(1) !important;
+    
     }
 }
 
