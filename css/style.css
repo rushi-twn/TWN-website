@@ -1511,7 +1511,30 @@ video#myVideo{
 	color: var(--teal); !important;
 	border-radius: 5px;
 }
- /*  */
+.weservice ul li{ color:#fff; padding: 20px 80px; position: relative; transition: all 0.3s ease; }
+.weservice ul li i{ padding-right:10px; }
+.weservice ul li:hover {
+  background: #006D5B; transition: all 500ms ease-in-out;
+}
+.weservice ul li:hover > .pop {
+  opacity: 1;
+  width: 400px;
+  height: auto;
+}
+
+.pop {
+	opacity: 0; width: 400px; height: auto; background: #ffffff; z-index: 999; margin: auto;
+	transition: all 0.3s ease; position: absolute; right: 10%; top: -30%; padding: 20px; border-radius: 10px;
+}
+.pop > p {
+  color: #000000;
+  font-size: 20px;
+}
+weservice ul li {
+  position: relative;
+  transform: translateY(-50%);
+}
+
 /* 
 .home-services ul {
   display: flex;
