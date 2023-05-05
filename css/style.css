@@ -1535,7 +1535,7 @@ video#myVideo{
   transform: translateY(-50%);
 }
 .deskservice { display: block; }
-/*.mobileservice { display: none; } */
+.mobileservice { display: none; }
 .mobileservice .accordion{ background-color: #000; border-bottom: none; --bs-accordion-btn-focus-box-shadow: none; }
 .mobileservice .accordion-item { background-color: #000; color: #fff; border-top: none; border-left: none;
 border-right: none; border-radius: 0px; }
