@@ -1530,9 +1530,22 @@ video#myVideo{
   color: #000000;
   font-size: 20px;
 }
-weservice ul li {
+.weservice ul li {
   position: relative;
   transform: translateY(-50%);
+}
+.deskservice { display: block; }
+/*.mobileservice { display: none; } */
+.mobileservice .accordion{ background-color: #000; border-bottom: none; --bs-accordion-btn-focus-box-shadow: none; }
+.mobileservice .accordion-item { background-color: #000; color: #fff; border-top: none; border-left: none;
+border-right: none; border-radius: 0px; }
+.mobileservice .accordion-button{ background-color: #000; color: #fff; }
+.mobileservice .accordion-button::after{ color: #fff; }
+.mobileservice .accordion-button:not(.collapsed)::after{ filter: brightness(0) invert(1); }
+.mobileservice .accordion-button::after{ filter: brightness(0) invert(1); }
+@media (max-width:768px) {
+	.deskservice { display: none; }
+	.mobileservice { display: block; }
 }
 
 /* 
