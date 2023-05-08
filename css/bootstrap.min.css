@@ -6350,7 +6350,7 @@ fieldset:disabled .btn {
 
     .modal-lg,
     .modal-xl {
-        --bs-modal-width: 800px
+        --bs-modal-width: 80% !important;
     }
 }
 
@@ -6900,7 +6900,7 @@ fieldset:disabled .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15%;
+    width: 5%;
     padding: 0;
     color: #fff;
     text-align: center;
