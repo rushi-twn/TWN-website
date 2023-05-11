@@ -239,7 +239,7 @@ body:hover>#trailer {
 }
 
 .div80 {
-    width: 80% !important;
+    width: 60% !important;
     margin: 0 auto;
     display: block;
 }
@@ -1871,8 +1871,10 @@ video#myVideo {
 /*  */
 .weservice ul li {
     color: #fff;
-    padding: 20px 80px;
+    padding: 25px 15%;
     position: relative;
+    display: flex;
+    align-items: center;
     transition: all 0.3s ease;
 }
 
@@ -1887,13 +1889,13 @@ video#myVideo {
 
 .weservice ul li:hover>.pop {
     opacity: 1;
-    width: 400px;
+    width: 450px;
     height: auto;
 }
 
 .pop {
     opacity: 0;
-    width: 400px;
+    width: 450px;
     height: auto;
     background: #ffffff;
     z-index: 999;
@@ -1902,12 +1904,12 @@ video#myVideo {
     position: absolute;
     right: 10%;
     top: -30%;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
 }
 
 .pop>p {
-    color: #000000;
+    color: var(--grey);
     font-size: 20px;
 }
 
