@@ -5164,7 +5164,8 @@ fieldset:disabled .btn {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    /* padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x); */
+    padding: 35px 0;
     font-size: 1rem;
     color: var(--bs-accordion-btn-color);
     text-align: left;
@@ -5228,7 +5229,8 @@ fieldset:disabled .btn {
 .accordion-item {
     color: var(--bs-accordion-color);
     background-color: var(--bs-accordion-bg);
-    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color)
+    /* border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) */
+    border: 1px solid var(--teal);
 }
 
 .accordion-item:first-of-type {
@@ -5261,7 +5263,8 @@ fieldset:disabled .btn {
 }
 
 .accordion-body {
-    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x)
+    /* padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x) */
+    padding: 1.5rem;
 }
 
 .accordion-flush .accordion-collapse {

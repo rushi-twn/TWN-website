@@ -455,7 +455,7 @@ body:hover>#trailer {
 }
 
 .content-size {
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
@@ -708,7 +708,8 @@ body:hover>#trailer {
 .footerTxt {
     font-size: 14px;
     line-height: 1.25;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .socialIcon {
@@ -737,6 +738,10 @@ body:hover>#trailer {
 }
 
 
+.footerTxt2{
+    margin: 1rem 0;
+}
+
 /*  */
 
 /* Service Blocks */
@@ -744,6 +749,14 @@ body:hover>#trailer {
 /* .serviceDiv {
     overflow: hidden;
 } */
+
+.serviceIcon{
+    font-size: 2.75rem !important;
+}
+
+.serviceIconTwo {
+    font-size: 1.5rem !important;
+}
 
 .serviceScroll {
     width: 100%;
@@ -1673,7 +1686,7 @@ video#myVideo {
 }
 
 .font18 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .icon i {
@@ -1691,26 +1704,27 @@ video#myVideo {
 }
 
 .accordion {
-    background-color: #fff;
-    color: #000;
+    /* background-color: #fff; */
+    /* color: #000; */
     cursor: pointer;
-    padding: 35px 75px;
+    padding: 35px 15%;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    border-bottom: 2px solid #ededed;
+    /* border-bottom: 1px solid var(--white); */
 }
 
 
 .panel {
-    padding: 50px 30px;
+    padding: 50px;
     display: none;
-    background-color: #000;
+    background-color: var(--grey);
     color: #fff;
     overflow: hidden;
+    border-bottom: 1px solid var(--teal);
 }
 
 .tech {
@@ -1722,16 +1736,16 @@ video#myVideo {
 }
 
 .accrodian-arrow i {
-    border: 1px solid #006D5B;
-    width: 30px;
-    height: 30px;
+    /* border: 1px solid var(--teal); */
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    color: #fff;
+    color: var(--teal);
     display: flex;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background: #006D5B;
+    /* background: var(--teal); */
     vertical-align: middle;
 }
 
@@ -1871,7 +1885,7 @@ video#myVideo {
 /*  */
 .weservice ul li {
     color: #fff;
-    padding: 25px 15%;
+    padding: 35px 15%;
     position: relative;
     display: flex;
     align-items: center;
@@ -1883,7 +1897,7 @@ video#myVideo {
 }
 
 .weservice ul li:hover {
-    background: #006D5B;
+    background: var(--teal);
     transition: all 500ms ease-in-out;
 }
 
@@ -1927,13 +1941,13 @@ video#myVideo {
 }
 
 .mobileservice .accordion {
-    background-color: #000;
+    background-color: var(--grey);
     border-bottom: none;
     --bs-accordion-btn-focus-box-shadow: none;
 }
 
 .mobileservice .accordion-item {
-    background-color: #000;
+    background-color: var(--grey);
     color: #fff;
     border-top: none;
     border-left: none;
@@ -1942,7 +1956,7 @@ video#myVideo {
 }
 
 .mobileservice .accordion-button {
-    background-color: #000;
+    background-color: var(--grey);
     color: #fff;
 }
 
@@ -1972,6 +1986,10 @@ video#myVideo {
 
 /* /////////////////////// */
 @media (max-width:576px) {
+    body{
+        overflow-x: hidden;
+    }
+
     #trailer {
         display: none;
     }
@@ -1983,7 +2001,7 @@ video#myVideo {
 
     .twn-logo {
         width: auto;
-        height: 45px;
+        height: 50px;
     }
 
     .stack-cards__item {
@@ -1991,6 +2009,13 @@ video#myVideo {
         /* height: 600px; */
         height: 80vh;
         margin-bottom: 35px;
+    }
+
+    .stack-cards__item:last-child {
+        width: 100%;
+        /* height: 600px; */
+        height: 80vh;
+        margin-bottom: 75px;
     }
 
     .card-stack-content {
@@ -2009,8 +2034,8 @@ video#myVideo {
     }
 
     .content-size {
-        font-size: 18px;
-        line-height: 1.75;
+        font-size: 1.125rem;
+        line-height: 1.5;
         text-align: justify;
     }
 
@@ -2148,7 +2173,7 @@ video#myVideo {
     }
 
     .accordion {
-        padding: 30px 25px;
+        padding: 25px;
     }
 
     .contactTitle {
@@ -2161,6 +2186,24 @@ video#myVideo {
         width: 100% !important;
         margin: 0 auto;
         display: block;
+    }
+
+    .footerTxt {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .serviceIcon{
+        font-size: 2rem !important;
+    }
+
+    .serviceIconTwo {
+        font-size: 1.5rem !important;
+    }
+
+    .qTitle{
+        font-size: 2.25rem;
+        line-height: 1.5;
     }
 }
 
@@ -2211,6 +2254,16 @@ video#myVideo {
     .modal-xl {
         --bs-modal-width: 90% !important;
         margin: 5vh auto;
+    }
+
+    .content-size {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .qTitle{
+        font-size: 4rem;
+        line-height: 1.5;
     }
 
 }
@@ -2273,6 +2326,16 @@ video#myVideo {
     .modal-xl {
         --bs-modal-width: 80% !important;
         margin: 5vh auto;
+    }
+
+    .content-size {
+        font-size: 1.875rem;
+        line-height: 1.5;
+    }
+
+    .qTitle{
+        font-size: 6rem;
+        line-height: 1.5;
     }
 }
 
