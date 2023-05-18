@@ -1246,8 +1246,14 @@ body:hover>#trailer {
     object-position: center;
 }
 
+.arrowDownDiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 .arrowDown span {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
@@ -2205,6 +2211,13 @@ video#myVideo {
         font-size: 2.25rem;
         line-height: 1.5;
     }
+
+    .philosophie .point{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
 
 /* SM */
